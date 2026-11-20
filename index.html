@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgriRover | Field Operations</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="assets/telemetry-api.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-icon"><i data-lucide="sprout"></i></span><span>AgriRover<small>FIELD OPERATIONS</small></span></a>
+    <nav aria-label="Dashboard">
+      <a href="#overview"><i data-lucide="layout-dashboard"></i>Overview</a>
+      <a href="#live"><i data-lucide="video"></i>Live Rover</a>
+      <a href="#disease"><i data-lucide="scan-line"></i>Disease Detection</a>
+      <a href="#irrigation"><i data-lucide="droplets"></i>Irrigation Control</a>
+      <a href="#history"><i data-lucide="history"></i>Activity History</a>
+      <a href="#settings"><i data-lucide="settings"></i>Settings</a>
+    </nav>
+    <div class="sidebar-footer"><span class="status-dot"></span><div>Demo workspace<small>Simulated operations</small></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span><i data-lucide="map-pin"></i> Greenfield Farm <span class="separator">/</span> North Plot</span><div class="backend-badges"><span id="backend-status" class="badge" role="status">Connecting</span><span class="badge">DEMO MODE</span></div></header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+</body>
+</html>
